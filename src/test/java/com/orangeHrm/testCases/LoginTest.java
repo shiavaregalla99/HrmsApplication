@@ -16,22 +16,19 @@ import com.orangeHrm.utils.configReader;
 public class LoginTest extends CommonMethods {
 
 	
-	@Test(groups="smoke1")
+	@Test(groups="smoke")
 	public void loginWithValidCredentails()  {
 		
 		CommonMethods.sendText(login.userName,configReader.getProperty("UserName"));
 		CommonMethods.sendText(login.password,configReader.getProperty("Password"));
 		CommonMethods.clickAction(login.buttonLogin);
-//		lp.userName.sendKeys("Admin");
-//		lp.password.sendKeys("admin123");
-//		lp.buttonLogin.click();
-		
+
 		String actualText=dashBoard.welcomeText.getText();
 		String expectedText="Welcome Linda";
 		Assert.assertEquals(actualText, expectedText,"actual and expected mismatch");
 		
 	}
-	@Test(priority=2,groups="smoke",enabled=false)
+	@Test(priority=2,groups="sanity")
 	public void invalidPasswordLogin() {
 		
 		

@@ -2,23 +2,23 @@
 <testng-results skipped="0" failed="0" ignored="2" total="3" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="18065" started-at="2020-09-13T17:13:08Z" finished-at="2020-09-13T17:13:26Z">
+  <suite name="Suite" duration-ms="24582" started-at="2020-09-20T13:35:13Z" finished-at="2020-09-20T13:35:38Z">
     <groups>
-      <group name="smoke1">
-        <method signature="LoginTest.loginWithValidCredentails()[pri:0, instance:com.orangeHrm.testCases.LoginTest@1bce4f0a]" name="loginWithValidCredentails" class="com.orangeHrm.testCases.LoginTest"/>
-      </group> <!-- smoke1 -->
+      <group name="smoke">
+        <method signature="LoginTest.loginWithValidCredentails()[pri:0, instance:com.orangeHrm.testCases.LoginTest@5c3bd550]" name="loginWithValidCredentails" class="com.orangeHrm.testCases.LoginTest"/>
+      </group> <!-- smoke -->
     </groups>
-    <test name="Test" duration-ms="18065" started-at="2020-09-13T17:13:08Z" finished-at="2020-09-13T17:13:26Z">
+    <test name="Test" duration-ms="24582" started-at="2020-09-20T13:35:13Z" finished-at="2020-09-20T13:35:38Z">
       <class name="com.orangeHrm.testCases.LoginTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.orangeHrm.testCases.LoginTest@1bce4f0a]" name="setUp" is-config="true" duration-ms="11423" started-at="2020-09-13T17:13:08Z" finished-at="2020-09-13T17:13:20Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.orangeHrm.testCases.LoginTest@5c3bd550]" name="setUp" is-config="true" duration-ms="16200" started-at="2020-09-20T13:35:13Z" finished-at="2020-09-20T13:35:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginWithValidCredentails()[pri:0, instance:com.orangeHrm.testCases.LoginTest@1bce4f0a]" name="loginWithValidCredentails" duration-ms="5748" started-at="2020-09-13T17:13:20Z" finished-at="2020-09-13T17:13:25Z">
+        <test-method status="PASS" signature="loginWithValidCredentails()[pri:0, instance:com.orangeHrm.testCases.LoginTest@5c3bd550]" name="loginWithValidCredentails" duration-ms="6593" started-at="2020-09-20T13:35:29Z" finished-at="2020-09-20T13:35:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithValidCredentails -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.orangeHrm.testCases.LoginTest@1bce4f0a]" name="tearDown" is-config="true" duration-ms="838" started-at="2020-09-13T17:13:25Z" finished-at="2020-09-13T17:13:26Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.orangeHrm.testCases.LoginTest@5c3bd550]" name="tearDown" is-config="true" duration-ms="1717" started-at="2020-09-20T13:35:36Z" finished-at="2020-09-20T13:35:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

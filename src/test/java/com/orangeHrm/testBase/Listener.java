@@ -4,22 +4,24 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
+import com.orangeHrm.utils.CommonMethods;
+
 public class Listener implements ITestListener{
 	@Override
 	public void onTestStart(ITestResult result) {
-		// TODO Auto-generated method stub
-		
+		BaseClass.test=BaseClass.report.createTest(result.getName());
 	}
 
 	@Override
 	public void onTestSuccess(ITestResult result) {
-		// TODO Auto-generated method stub
+		CommonMethods.takeScreenShot("/Passed/" +result.getName());
 		
 	}
 @Override
 	public void onTestFailure(ITestResult result) {
 		
-		
+	CommonMethods.takeScreenShot("/Failed/" +result.getName());
+	
 	}
 
 	@Override

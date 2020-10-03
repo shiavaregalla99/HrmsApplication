@@ -7,16 +7,25 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+import com.aventstack.extentreports.reporter.configuration.Theme;
 import com.orangeHrm.utils.Constants;
 import com.orangeHrm.utils.configReader;
 
 public class BaseClass {
+	
+public static	ExtentHtmlReporter htmlReport;
+public static	ExtentReports report;
+public static	ExtentTest test;
 //BASE CLASS ----> initializes the driver and quits
 	public static WebDriver driver;
-	@BeforeMethod(alwaysRun=true)
-	public static WebDriver setUp() {
+		public static WebDriver setUp() {
 		configReader.readProperties(Constants.CONFIGURATION_PATH);	
    
 		 switch(configReader.getProperty("BrowserName")) {
@@ -45,7 +54,7 @@ public class BaseClass {
 		  return driver;
 		
 	}
-	@AfterMethod(alwaysRun=true)
+	
 	public static void tearDown() {
 		if(driver!=null) {
 		driver.quit();

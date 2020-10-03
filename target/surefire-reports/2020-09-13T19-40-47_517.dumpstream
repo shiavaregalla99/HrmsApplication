@@ -1,4 +1,0 @@
-# Created at 2020-09-13T19:41:01.423
-Boot Manifest-JAR contains absolute paths in classpath 'D:\Batch04_JavaAssignment\HrmsApplication\target\test-classes'
-Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
-
