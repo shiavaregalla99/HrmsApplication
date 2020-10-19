@@ -14,9 +14,11 @@ glue="com/orangeHrm/steps",//where we cna find the implementation code for
 //if set to false no actual expression will happen
 //strict = true,
 tags="@smoke",
-plugin= {"pretty","html:target/cucumber-default-report"}
-
-)
+plugin= {
+		"pretty",//prints gherkin steps in console
+		"html:target/cucumber-default-report",//create basic html report in specified location
+		"json:target/cucumber.json"
+})
 public class TestRunner {
 
 }

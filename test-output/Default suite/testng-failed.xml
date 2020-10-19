@@ -5,9 +5,9 @@
     <classes>
       <class name="com.orangeHrm.testCases.LoginTest">
         <methods>
-          <include name="tearDown"/>
-          <include name="invalidTestData"/>
-          <include name="setUp"/>
+          <include name="invalidPasswordLogin"/>
+          <include name="invalidTestData" invocation-numbers="0 1 2 3"/>
+          <include name="loginWithValidCredentails"/>
         </methods>
       </class> <!-- com.orangeHrm.testCases.LoginTest -->
     </classes>

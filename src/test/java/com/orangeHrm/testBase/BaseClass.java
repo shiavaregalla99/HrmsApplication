@@ -20,9 +20,7 @@ import com.orangeHrm.utils.configReader;
 
 public class BaseClass {
 	
-public static	ExtentHtmlReporter htmlReport;
-public static	ExtentReports report;
-public static	ExtentTest test;
+
 //BASE CLASS ----> initializes the driver and quits
 	public static WebDriver driver;
 		public static WebDriver setUp() {
